@@ -12,3 +12,24 @@
         height:25vw;
     }
 }
+@media (max-width: 600px){
+    .detailmain{
+        margin:1vh;
+    }
+    .detailsPanel{
+        margin: 5vw;
+        display: -ms-flexbox;
+        flex-wrap: wrap;
+        word-break: break-all;
+        width:80vw;
+        img{
+            width:40vw;
+            height:40vw;
+            margin:10vw;
+        }
+    }
+    .button1{
+        align-self: center;
+        width:200px;
+    }
+}
