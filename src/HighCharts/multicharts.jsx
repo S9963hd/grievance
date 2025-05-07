@@ -6,7 +6,7 @@ import {
   Legend
 } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
-
+import './multiCharts.css';
 // Register the chart elements
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -45,10 +45,8 @@ const options = {
 
 const DonutChart = () => {
   return (
-    <div>
-      <div className="dataChart">
+    <div className="dataChart">
         <Doughnut data={data} options={options} />
-      </div>
     </div>
   );
 };

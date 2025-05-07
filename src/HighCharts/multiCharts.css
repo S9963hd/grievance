@@ -1,0 +1,10 @@
+.dataChart{
+    width:45vw;
+    height:45vh
+}
+@media (max-width:600px){
+    .dataChart{
+        width:90vw;
+        height: 90vw;
+    }
+}

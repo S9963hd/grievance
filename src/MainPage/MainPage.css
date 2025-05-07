@@ -80,9 +80,10 @@
             display: none;
         }
     }
-    .visualize1{
-        width: 100vw;
-        /* background-color: #FF9000; */
+    .visualize1,.visualize2{
+        *{
+            width: 100vw;
+        }
     }
 }
 .g-3{

@@ -150,7 +150,7 @@ const StatusLineGraph = () => {
       background: '#fff',
       boxShadow: '0 8px 20px rgba(0,0,0,0.1)'
     }}>
-      <div style={{ height: '400px' }}>
+      <div className="dataChart">
         <Line ref={chartRef} data={chartData} options={options} />
       </div>
     </div>
