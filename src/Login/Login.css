@@ -1,0 +1,47 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+}
+.loginMain{
+    display: block;
+    padding:5vw;
+    box-shadow: 0px 0px 10px grey;
+    border-radius:25px;
+}
+.inputText{
+    font-size:larger;
+    color:grey;
+    border:none;
+    border-bottom:2px solid black;
+    width:35vw;
+    outline:none;
+}
+.g-3{
+    margin-top: 1vw;
+    margin-bottom:1vw;
+}
+.option{
+    width:10vw;
+    padding:0.3vw;
+}
+@media (max-width:520px){
+    .loginMain{
+        margin:20px;
+        *{
+            margin-top:10px
+        }
+    }
+    .inputText{
+        width:80vw;
+    }
+    .option{
+        width:30vw;
+    }
+    .button1{
+        align-self: center;
+        width:120px;
+    }
+}

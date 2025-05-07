@@ -1,0 +1,127 @@
+.logo{
+    width:8vw;
+    height:8vw;
+}
+.mainPage{
+    display: flex;
+    justify-content: space-between;
+    margin-left:8vw;
+    margin-right:8vw;
+    font-family: "Inria sans";
+    align-items: center;
+    h1{
+        font-size:50px;
+        font-weight: 1000;
+        width:30vw;
+    }
+}
+.mainPage1 {
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ::nth-child(2n){
+        margin-left: 2.5vw;
+    }
+    :nth-child(n){
+        margin-left: 2.5vw; 
+    }
+}
+.women1{
+    margin:4vw;
+    width: 30vw;
+    height:31vw
+}
+.buttonGroup{
+    > *{
+        margin-left:20px;
+        margin-right:20px;
+    }
+}
+.buttonCommon:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+.button1{
+    padding:10px;
+    width:200px;
+    background-color: #FF9000;
+    color:white;
+    font-family:"Inria sans";
+    font-size:larger;
+    border:none;
+}
+.button1:nth-child(n){
+    animation:sliderleft 0.5s ease-in;
+}
+.button1:nth-child(2n){
+    animation:sliderright 0.5s ease-in;
+}
+@media (max-width:600px) {
+    .logo{
+        width:50px;
+        height:50px;
+    }
+    .button1{
+        margin-top:10px;
+        width: 150px;
+    }
+    .button1-mainpage{
+        width:200px !important;
+        align-self: center;
+    }
+    .mainPage:nth-child(2)
+    {   
+        margin-top:50px;
+        display: block;
+        h1{ width:100%}
+        flex-direction: row-reverse;
+        img{
+            display: none;
+        }
+    }
+    .visualize1{
+        width: 100vw;
+        /* background-color: #FF9000; */
+    }
+}
+.g-3{
+    margin-top: 1vw;
+    margin-bottom:1vw;
+}
+.mainpanel{
+    padding:10px;
+}
+@keyframes sliderleft{
+    from{
+        transform:translateX(-10px);
+    }
+    to{
+        transform:translateX(0px);
+    }
+}
+@keyframes sliderright{
+    from{ transform:translateX(10px) }
+    to{ transform:translateX(0px)}
+}
+.visualize1{
+    width:25vw;
+}
+.visualize2{
+    width:40vw;
+}
+.snap-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  .snap-section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  

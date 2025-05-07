@@ -1,0 +1,49 @@
+.listOfGrievance{
+    margin:5vw;
+}
+
+.table{
+    margin:1vw;
+    border-collapse: collapse;
+    width:100%;
+    table-layout: fixed;
+    text-align: center;
+    th{ 
+        font-size: larger;
+        padding-top:1vw;
+        padding-bottom:1vw;
+        word-wrap: break-word;   /* Older fallback */
+        overflow-wrap: break-word;
+        word-break: break-all;
+    }
+    /* tr{
+        box-shadow: 4px 0px 3px grey;
+        border-radius: 20px;
+    } */
+    td{
+        padding-top:0.5vw;
+        padding-bottom:0.5vw;
+        word-wrap: break-word;   /* Older fallback */
+        overflow-wrap: break-word;
+        word-break: break-all;
+    }
+}
+tr{
+    border-bottom: 2px solid black;
+}
+@media (max-width:400px) {
+    .listOfGrievance{
+        margin:7vw;
+    }
+    thead{
+        font-size: small;
+        padding-top:1vw;
+        padding-bottom:1vw;
+        word-wrap: break-word;   /* Older fallback */
+        overflow-wrap: break-word;
+        word-break: break-all;
+    }
+    td{
+        font-size: small;
+    }
+}

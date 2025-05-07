@@ -1,0 +1,20 @@
+.inputTextComplains{
+    padding-left:1vw;
+    padding:5px;
+    margin:10px;
+    width:80vw;
+    outline:none;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+.complainMain{
+    margin:3vw;
+}
+@media (max-width:720px){
+    .complainMain{
+        margin-top:10vw;
+    }
+    .button1-Complains{
+        width:180px;
+    }
+}
