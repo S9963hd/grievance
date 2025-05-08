@@ -39,11 +39,11 @@ const MainPage = () => {
         </div>
         <div>
         <h1 style={{textAlign:'center',padding:'2vh',fontWeight:'700'}}>Total accountable Grievances</h1>
-        <div className="mainPage" style={{height:'85vh',width:'80vw',alignItems:'center'}}>
+        <div className="mainPage" style={{height:'85vh',width:'70vw',alignItems:'center'}}>
             <div className="visualize2">
                 <Multicharts/>
             </div>
-            <div className="visualize2">
+            <div className="visualize2" style={{flexWrap:'wrap'}}>
                 <LiveStatusGraph />
             </div>
         </div>
@@ -52,4 +52,4 @@ const MainPage = () => {
   )
 }
 
-export default MainPage
+export default MainPage;

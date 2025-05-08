@@ -81,9 +81,9 @@
         }
     }
     .visualize1,.visualize2{
-        *{
-            width: 100vw;
-        }
+        
+            width: 60vw;
+        
     }
 }
 .g-3{

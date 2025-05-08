@@ -1,11 +1,41 @@
-.listOfOfficer{
-    margin:5vw;
-}
-.tableOfficer{
-    margin:5vw;
+.listOfOfficer {
+    margin: 5vw;
+    height: 80vh;
+  }
+  
+  .tableScrollWrapper {
+    width: 80vw;
+    height: 75vh;
+    margin: 2vw;
+    overflow-y: auto; 
+  }
+  
+  .tableOfficer {
+    width: 100%;
+    border:none;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .officerRow {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width:75vw;
-    text-align: center;
-    padding: 10vw;;
-
-
-}
+    box-shadow: 3px 4px 4px grey;
+    border-radius: 20px;
+    border:none;
+    margin:1.1vw;
+    img{
+        width:3vw;
+        height:3vw;
+        border-radius:60px;
+    }
+  }
+  
+  .officerRow td {
+    padding: 1.5vh 2vw;
+  }
+  
