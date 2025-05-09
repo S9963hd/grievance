@@ -27,6 +27,10 @@
     width:10vw;
     padding:0.3vw;
 }
+.buttonBehave{
+    display:flex;
+    justify-content: space-around;
+}
 @media (max-width:520px){
     .loginMain{
         margin:20px;
@@ -42,6 +46,22 @@
     }
     .button1{
         align-self: center;
-        width:120px;
+        justify-self: center;
+        width:270px
     }
+    .buttonBehave{
+        display:block;
+        
+    }
+}
+@keyframes spinnerAnimate {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.spinner{
+    animation: spinnerAnimate 1s infinite ease-in-out;
 }

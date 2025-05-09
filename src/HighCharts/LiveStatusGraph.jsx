@@ -10,7 +10,7 @@ import {
   Filler
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
-
+import './LiveStatusGraph.css';
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Legend, Tooltip, Filler);
 
 const generateRandomUpdate = (prev) => ({
@@ -142,15 +142,8 @@ const StatusLineGraph = () => {
   };
 
   return (
-    <div style={{
-      padding: '1rem',
-      margin: '2rem auto',
-      maxWidth: '900px',
-      borderRadius: '20px',
-      background: '#fff',
-      boxShadow: '0 8px 20px rgba(0,0,0,0.1)'
-    }}>
-      <div className="dataChart">
+    <div className="outerChart">
+      <div className="dataChart1">
         <Line ref={chartRef} data={chartData} options={options} />
       </div>
     </div>

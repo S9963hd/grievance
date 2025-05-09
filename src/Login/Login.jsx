@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import './Login.css';
 const Login = () => {
     const [showPassword,setShowPassword]=useState(false);
+    const [onLoad,SetOnLoad]=useState(false);
   return (
     <div className="main">
         <div className="loginMain">
@@ -21,12 +22,12 @@ const Login = () => {
                 <input type="checkbox" className="form-check" /> <span>I agree with terms and condition of the Organization</span>
             </div>
             <br/>
-            <div style={{display:'flex',justifyContent:'space-around'}}>
-                <button className="button1 buttonCommon g-3 buttomanimate" >SignUp</button>
+            <div className="buttonBehave">
+                <button className="button1 buttonCommon g-3 buttomanimate" onClick={()=>SetOnLoad(!onLoad)}>SignUp&nbsp;{(onLoad)?<i class="fa-solid fa-spinner spinner"></i>:""}</button>
                 <button className="button1 buttonCommon g-3 buttomanimate" >SignIn</button>
             </div>
         </div>
-    </div>
+    </div>  
   )
 }
 

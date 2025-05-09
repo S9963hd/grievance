@@ -78,7 +78,7 @@ const Complains = () => {
           </>
         )}        
   */}
-        <button className="button1 buttonCommon button1-Complains">Submit Request</button>
+        <button className="button1 buttonCommon button1-Complains">Submit Request &nbsp;<i class="fa-solid fa-paper-plane"></i></button>
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import { loginDetails,LoginStateController } from '../Login/LoginState';
 import Modal from '../TemplateModal/Modal'; 
 import Multicharts from '../HighCharts/multicharts';
 import LiveStatusGraph from '../HighCharts/LiveStatusGraph';
+import Notification from '../Notification/Notification.jsx';
 const MainPage = () => {
     const [state,dispatch]=useReducer(LoginStateController,loginDetails);
     const ref=useRef();
@@ -15,7 +16,7 @@ const MainPage = () => {
         <div className="mainPage">
             <img className="logo" src="/assets/logo.png" alt="Logo" />
             <div className="mainPage1">
-                <h4 className="buttonCommon" onClick={()=>navigate('/login')}>SignIn/SignUp</h4>
+                <h4 className="buttonCommon" onClick={()=>navigate('/login')}>SignIn/SignUp&nbsp;<i class="fa-solid fa-right-to-bracket"></i></h4>
             </div>
         </div>
         <div className="mainPage mainPageMob">
@@ -29,7 +30,7 @@ const MainPage = () => {
                 }}
                 /></h1>
                 <Modal ref={ref}/>
-                <div className="buttonGroup g-3" >
+                <div className="buttonGroup g-3 buttonbehave" >
                     <button className="buttonCommon button1 button1-mainpage" onClick={()=>navigate('/login')}>Get Started</button>
                     <button className="buttonCommon button1 button1-mainpage" onClick={()=>(loginDetails.name=="")?ref.current.showModal():navigate('/complains')}>Start Grievance</button>
                 </div>
@@ -39,14 +40,15 @@ const MainPage = () => {
         </div>
         <div>
         <h1 style={{textAlign:'center',padding:'2vh',fontWeight:'700'}}>Total accountable Grievances</h1>
-        <div className="mainPage" style={{height:'85vh',width:'70vw',alignItems:'center'}}>
-            <div className="visualize2">
+        <div className="mainPage">
+            <div >
                 <Multicharts/>
             </div>
-            <div className="visualize2" style={{flexWrap:'wrap'}}>
+            <div>
                 <LiveStatusGraph />
             </div>
         </div>
+        <Notification/>
         </div>
     </div>
   )

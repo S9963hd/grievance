@@ -1,0 +1,26 @@
+.outerChart{
+    padding: 1rem;
+      margin: 2rem auto;
+      max-width: 46vw;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+@media (max-width:600px){
+    .outerChart{
+        padding: 1rem;
+          margin: 2rem auto;
+          max-width: 90vw;
+          border-radius: 20px;
+          background: #fff;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .dataChart1{
+        width:75vw !important;
+        height:45vh
+    }
+}
+.dataChart1{
+    width:40vw;
+    height:45vh
+}

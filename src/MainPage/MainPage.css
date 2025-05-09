@@ -20,12 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    ::nth-child(2n){
-        margin-left: 2.5vw;
-    }
-    :nth-child(n){
-        margin-left: 2.5vw; 
-    }
+    margin-left: 2.5vw;
 }
 .women1{
     margin:4vw;
@@ -64,11 +59,10 @@
     }
     .button1{
         margin-top:10px;
-        width: 150px;
-    }
-    .button1-mainpage{
-        width:200px !important;
+        width: 78vw !important;
         align-self: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .mainPage:nth-child(2)
     {   
@@ -80,10 +74,9 @@
             display: none;
         }
     }
-    .visualize1,.visualize2{
-        
-            width: 60vw;
-        
+    .visualize1{
+        width: 90vw;
+        background-color: #FF9000;
     }
 }
 .g-3{
@@ -92,6 +85,8 @@
 }
 .mainpanel{
     padding:10px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 }
 @keyframes sliderleft{
     from{

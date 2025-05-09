@@ -23,9 +23,10 @@
     td{
         padding-top:0.5vw;
         padding-bottom:0.5vw;
-        word-wrap: break-word;   /* Older fallback */
+        word-wrap: break-word; 
         overflow-wrap: break-word;
         word-break: break-all;
+        font-size: large;
     }
 }
 tr{

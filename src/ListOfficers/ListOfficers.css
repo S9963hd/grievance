@@ -9,7 +9,7 @@
     margin: 2vw;
     overflow-y: auto; 
   }
-  
+
   .tableOfficer {
     width: 100%;
     border:none;
@@ -33,9 +33,39 @@
         height:3vw;
         border-radius:60px;
     }
+    td{font-size:large}
   }
   
   .officerRow td {
     padding: 1.5vh 2vw;
   }
-  
+  @media (max-width:600px){
+    .tableScrollWrapper{
+      height:90vh;
+      width:95vw;
+    }
+    .officerRow{
+      display:block;
+      p{ text-align: center;}
+      img{
+        width:30vw;
+        height:30vw;
+      }
+      >td{
+        align-self: center;
+        margin:0px;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  .officerImageWrapper{
+    display:'flex' !important;
+    justify-content:'space-around';
+    align-items:'center';
+    > p{
+       text-align: center;
+       word-wrap: break-word;
+       word-break: break-all;
+    }
+  }

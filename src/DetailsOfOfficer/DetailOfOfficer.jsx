@@ -19,9 +19,9 @@ const DetailOfOfficer = () => {
                 <h3>Problem Solved : 40/70</h3>
             </div>
         </div>
-        <button className="btn mx-5 btn-danger button1">Remove</button>
-        <button className="btn mx-5 btn-warning button1">Next</button>
-        <button className="btn mx-5 btn-success button1">Promote</button>
+        <button className="btn mx-5 btn-danger button1">Remove&nbsp;<i class="fa-solid fa-xmark"></i></button>
+        <button className="btn mx-5 btn-warning button1">Next&nbsp;<i class="fa-solid fa-right-long"></i></button>
+        <button className="btn mx-5 btn-success button1">Promote&nbsp;<i class="fa-solid fa-up-long"></i></button>
     </div>
   )
 }
