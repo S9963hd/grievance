@@ -39,8 +39,8 @@ const MainPage = () => {
             <img src="/assets/Women2-placeholder.jpg" alt="women1" className="women1"/>
         </div>
         <div>
-        <h1 style={{textAlign:'center',padding:'2vh',fontWeight:'700'}}>Total accountable Grievances</h1>
-        <div className="mainPage " style={{height:'90vh'}}>
+        <h1 style={{textAlign:'center',padding:'5vh',fontWeight:'700'}}>Total accountable Grievances</h1>
+        <div className="mainPage " style={{height:'85vh'}}>
             <div >
                 <Multicharts/>
             </div>

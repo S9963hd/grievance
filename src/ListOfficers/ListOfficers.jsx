@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
 import './ListOfficers.css';
+import { useNavigate } from 'react-router-dom';
 const ListOfficers = () => {
-  const [index,setIndex]=useState([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15])
+  const [index,setIndex]=useState([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]);
+  const navigate=useNavigate();
   return (
     <div className="listOfOfficer">
   <h1><b>List Of Officers</b></h1>
@@ -17,7 +19,7 @@ const ListOfficers = () => {
             <td>4.5/5</td>
             <td>40/70 Solved</td>
             <td>Erode</td>
-            <td className="text-primary buttonCommon">More Details&nbsp;<i class="fa-solid fa-circle-info"></i></td>
+            <td className="text-primary buttonCommon" onClick={()=>navigate('/detailOfOfficer')}>More Details&nbsp;<i class="fa-solid fa-circle-info"></i></td>
           </tr>
         ))}
       </tbody>
