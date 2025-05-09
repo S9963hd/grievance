@@ -36,11 +36,11 @@ const MainPage = () => {
                 </div>
                 <br/>
             </div>
-            <img src="/assets/Women2-placeholder.png" alt="women1" className="women1"/>
+            <img src="/assets/Women2-placeholder.jpg" alt="women1" className="women1"/>
         </div>
         <div>
         <h1 style={{textAlign:'center',padding:'2vh',fontWeight:'700'}}>Total accountable Grievances</h1>
-        <div className="mainPage">
+        <div className="mainPage " style={{height:'90vh'}}>
             <div >
                 <Multicharts/>
             </div>
