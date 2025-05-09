@@ -1,11 +1,37 @@
-import React,{useState} from 'react'
+import React,{useState,useRef,useEffect} from 'react'
 import './Login.css';
 const Login = () => {
     const [showPassword,setShowPassword]=useState(false);
     const [onLoad,SetOnLoad]=useState(false);
+     const vantaRef = useRef(null);
+  const [vantaEffect, setVantaEffect] = useState(null);
+
+  useEffect(() => {
+    if (!vantaEffect && window.VANTA && window.THREE) {
+      setVantaEffect(
+        window.VANTA.NET({
+          el: vantaRef.current,
+          THREE: window.THREE,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0xfca738,
+          backgroundColor: 0xfcf8fc
+        })
+      );
+    }
+
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
   return (
-    <div className="main">
-        <div className="loginMain">
+    <div className="main" ref={vantaRef}>
+        <div className="loginMain" style={{backgroundColor:'white'}}>
             <img src="/assets/logo.png" className="logo g-3" alt="logo"/>
             <div style={{width:'35vw'}}>
                 <input className="inputText g-3" type="text" placeholder="Enter Name"/>
